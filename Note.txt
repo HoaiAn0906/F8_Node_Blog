@@ -1,0 +1,3 @@
+Nodemon: cập nhật trực tiếp khi có chỉnh sửa trong code, không cần phải start dev lại
+Morgan: quan sát được request từ client lên web server
+Template engines (handlebars): giúp viết ra file chứa mã HTML ở nơi khác, gọn gàng, hiệu quả hơn
