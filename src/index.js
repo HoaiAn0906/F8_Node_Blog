@@ -6,6 +6,11 @@ const port = 3000
 
 app.use(express.static('.\\src\\public'))
 
+app.use(express.urlencoded({
+    extended: true
+}))
+app.use(express.json())
+
 //HTTP logger
 app.use(morgan('combined'))
 
@@ -18,6 +23,10 @@ app.set('views', '.\\src\\resources\\views')
 
 app.get('/', (req, res) => {
     res.render('home')
+})
+
+app.get('/search', (req, res) => {
+    res.render('search')
 })
 
 app.listen(port, () => {
